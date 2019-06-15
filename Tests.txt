@@ -1,0 +1,363 @@
+Test 1
+Category        : 3i
+Input Sequence  : 'r' 
+Expected Outcome: The starfighter is 7 pixels in height
+
+Test 2 
+Category        : 3ii
+Input Sequence  : 'r'
+Expected Outcome: the starfighter is 6 pixels in width
+
+Test 3
+Category        : 3iii
+Input Sequence  : 'r'
+Expected Outcome: the cannon is implemented
+
+Test 4
+Category        : 3iv
+Input Sequence  : 'r'
+Expected Outcome: The starfighter is centred in the buttom 8 rows
+
+Test 5
+Category        : 3v
+Input Sequence  : 'r' 'p' 'r' OR 'SW2' 'joystick center' 'SW2'
+Expected Outcome: when the game is started or reseted, the starfighter is stationary
+
+Test 6
+Category        : 4i
+Input Sequence  : 'r' 'p' 'r' OR 'SW2' 'joystick center' 'SW2'
+Expected Outcome: 3 Asteroids fall from the top of the screen, two seconds after the the game is started or restarted
+
+Test 7
+Category        : 4ii
+Input Sequence  : 'r' 'p' OR 'SW2' 'joystick center'
+Expected Outcome: 3 Asteroids fall from the top of the screen at random horizontal positions, move smoothly into the view one pixel long at a time
+
+Test 8
+Category        : 4v
+Input Sequence  : 'r' 'p' OR 'SW2' 'joystick center'
+Expected Outcome: Asteroids disapper when they touch the shield
+
+Test 9 
+Category        : 4v
+Input Sequence  : 'r' 'p' 'k' '2' 'enter' '2' 'enter'
+Expected Outcome: Asteroids and the generated boulder disapper when they touch the shield
+
+Test 10 
+Category        : 4v
+Input Sequence  : 'r' 'p' 'i' '2' 'enter' '2' 'enter'
+Expected Outcome: Asteroids and the generated fragment disapper when they touch the shield
+
+Test 11 
+Category        : 4vi
+Input Sequence  : 'r' 'p' 'w' OR 'SW2' 'joystick center' 'joystick up'
+Expected Outcome: Asteroids split to 2 boulders when hit by plasma, and the hitted asteroid disappers
+
+Test 12
+Category        : 4vi
+Input Sequence  : 'r' 'p' 'k' '2' 'enter' '2' 'enter' 'h' '2' 'enter' 'o' '0' 'enter' 'p' 'w'
+Expected Outcome: Boulder splits to 2 fragment when hit by plasma, and the hitted boulder disappers
+
+Test 13
+Category        : 4vi
+Input Sequence  : 'r' 'p' 'i' '2' 'enter' '2' 'enter' 'h' '2' 'enter' 'o' '0' 'enter' 'p' 'w'
+Expected Outcome: the hitted fragment disappers
+
+Test 14
+Category        : 4ix
+Input Sequence  : 'r' 'p' 
+Expected Outcome: the asteroids are 7 by 7 pixels, shaped like diamonds
+
+Test 15
+Category        : 4x
+Input Sequence  : 'r' 'k' '10' 'enter' '10' 'enter'
+Expected Outcome: the boulder is 5 by 5 pixels, shaped like diamonds
+
+Test 16
+Category        : 4xi
+Input Sequence  : 'r' 'i' '10' 'enter' '10' 'enter'
+Expected Outcome: the fragment is 3 by 3 pixels, shaped like plus symbols
+
+Test 17
+Category        : 5i 5ii 5iii
+Input Sequence  : 'r' 's' OR 'SW2' 'joystick down'
+Expected Outcome: the game time, remaining life and score are displayed on teensy screen formatly
+(Please press 'p' or joystick center to exit the screen)
+
+Test 18
+Category        : 5iv - 5xii
+Input Sequence  : 'r' 'p' 's' OR 'SW2' 'joystick center' 'joystick down' 
+Expected Outcome: the game time, lives, score, number of asteroids, number of boulders, number of fragments, number of
+plasmas, aim angle of turret, speed of the game is sent to the computer screen
+
+Test 19
+Category        : 6i
+Input Sequence  : 'r' 'p' 's' OR 'SW2' 'joystick center' 'joystick down' 
+Expected Outcome: the game status information is only sent to the computer
+
+Test 20
+Category        : 6ii
+Input Sequence  : 'r' 's' OR 'SW2' 'joystick down' 
+Expected Outcome: some game information will be sent to computer and some will be displayed on teensy screen
+(Please press 'p' or joystick center to exit the screen)
+
+Test 21
+Category        : 7i
+Input Sequence  : 'r' 'p' 'm' '1' 'enter' 'w' 's'
+Expected Outcome: the pixel level collision detection between asteroids and plasmas is implemented,
+the displayed value of plasma and asteroid will decresed by 1 when they hit each other
+
+
+Test 22
+Category        : 7i
+Input Sequence  : 'r' 'k' '15' 'enter' '15' 'enter' 'h' '15' 'enter' 'o' '0' 'enter' 'p' 'm' '1' 'enter' 'w' 's'
+Expected Outcome: the pixel level collision detection between boulders and plasmas is implemented,
+the displayed value of plasma and boulder will decresed by 1 when they hit each other
+
+Test 23
+Category        : 7i
+Input Sequence  : 'r' 'i' '15' 'enter' '15' 'enter' 'h' '15' 'enter' 'o' '0' 'enter' 'p' 'm' '1' 'enter' 'w' 's'
+Expected Outcome: the pixel level collision detection between fragments and plasmas is implemented,
+the displayed value of plasma and fragment will decresed by 1 when they hit each other
+
+Test 24
+Category        : 8i
+Input Sequence  : 'r' 'p' 'r' 'p' 'r' 'p' OR 'SW2' 'joystick center' 'SW2' 'joystick center' 'SW2' 'joystick center'
+Expected Outcome: the starfighter is randomly assigned an angle, moves at the speed of 1
+
+Test 25
+Category        : 8ii
+Input Sequence  : 'r' 'p' 'a' 'a' OR 'SW2' 'joystick center' 'joystick left' 'joystick left'
+Expected Outcome: the starfighter moves to the left dirction
+
+Test 26
+Category        : 8iii
+Input Sequence  : 'r' 'p' 'd' 'd' OR 'SW2' 'joystick center' 'joystick right' 'joystick right' 
+Expected Outcome: the starfighter moves to the right dirction
+
+Test 27
+Category        : 8v
+Input Sequence  : 'r' 'p' 'a' 'a' 'd' OR 'SW2' 'joystick center' 'joystick left' 'joystick left' 'joystick right' 
+Expected Outcome: the starfighter stops
+
+Test 28
+Category        : 8vii
+Input Sequence  : 'r' 'p' 'd' 'd' 'a' OR 'SW2' 'joystick center' 'joystick right' 'joystick right' 'joystick left' 
+Expected Outcome: the starfighter stops
+
+Test 29
+Category        : 8viii
+Input Sequence  : 'r' 'p' 'd' 'd'  OR 'SW2' 'joystick center' 'joystick right' 'joystick right' 
+Expected Outcome: the starfighter stops when it hits the right boarder
+
+Test 30
+Category        : 8viii
+Input Sequence  : 'r' 'p' 'a' 'a' OR 'SW2' 'joystick center' 'joystick left' 'joystick left' 
+Expected Outcome: the starfighter stops when it hits the left boarder
+
+Test 31
+Category        : 9i
+Input Sequence  : 'r' 'o' '0' 'enter'
+Expected Outcome: the cannon is straight up
+
+Test 32
+Category        : 9i 9ii
+Input Sequence  : 'r' 'o' '-99' 'enter' 's'
+Expected Outcome: the cannon goes to -60 degree, the displayed turrent value will be -60
+
+Test 33
+Category        : 9i 9ii
+Input Sequence  : 'r' 'o' '99' 'enter' 's'
+Expected Outcome: the cannon goes to 60 degree, the displayed turrent value will be 60
+
+Test 34
+Category        : 9ii 9iii
+Input Sequence  : 'r' 'Left potentiometer to minimum position' 'Left potentiometer to maximum position' 
+Expected Outcome: the rangle of the cannon is between -60 and 60
+
+Test 35
+Category        : 9iii
+Input Sequence  : 'r' 'o' '-60' 'enter' 'o' '30' 'enter' 'Left potentiometer' 's'
+Expected Outcome: the plasma cannon visibly moves to reflect the current angle, the displayed angle will be changed based on the value
+of the left potentiometer
+
+Test 36
+Category        : 9iv
+Input Sequence  : 'r' 'Left potentiometer to minimum position' 'o' '0' 'enter' 's'
+Expected Outcome: the input number '0' overrides the left potentiometer value for one second, 
+plasma cannon can visibly reflect this, the displayed angle will be changed to 0 for one secone
+
+Test 37
+Category        : 10i 10ii
+Input Sequence  : 'r' 'p' 'w' 'w' 'w' OR 'SW2' 'joystick center' 'keep joystick up pressed'
+Expected Outcome: the plasma bolts have 0.2 seconds elapsed since the last plasma bolts was fired
+
+Test 38
+Category        : 10ii
+Input Sequence  : 'r' 'p' 'o' '10' 'enter' 'w' 'o' '-20' 'enter' 'w' 'o' '-60' 'enter' 'w' 
+OR "SW2" "joystick center" "move left potentiometer and press joystick up at the same time"
+Expected Outcome: the plasma bolts follow the velocity which the cannon was aimed when they were launched, move with constant velocity
+
+Test 39
+Category        : 10iii
+Input Sequence  : 'r' 'k' '10' 'enter' '10' 'enter' 'h' '10' 'enter' 'p' 'o' '0' 'enter' 'w' 's'
+Expected Outcome: the plasma bolts and the spawned boulder disapper when they coincide each other, the displayed plasma value 
+will be 0 when the launched plasma disappers
+
+Test 40
+Category        : 10iii
+Input Sequence  : 'r' 'h' '7' 'enter' 'o' '-60' 'enter' 'p' 'w'
+Expected Outcome: the plasma disappers when it reachs the edge of the screen, the displayed plasma value 
+will be 0 when the launched plasma disappers
+
+Test 41
+Category        : 10iv
+Input Sequence  : 'r' 'p' 'keep w pressed' 's'
+Expected Outcome: the amount of plasma bolts on screen can be more then 20 and less than 100
+
+Test 42
+Category        : 10vi
+Input Sequence  : 'r' 'p' 'shot 1 asteroid' 's'
+Expected Outcome: the score increments by 1 for each hitted asteroid
+
+Test 43
+Category        : 10vii
+Input Sequence  : 'r' 'k' '2' 'enter' '2' 'enter' 'h' '0' 'enter' 'o' '0' 'enter' 'p' 'w' 's'
+Expected Outcome: the score increments by 2 when the boulder is hitted
+
+Test 44
+Category        : 10viii
+Input Sequence  : 'r' 'i' '2' 'enter' '2' 'enter' 'h' '0' 'enter' 'o' '0' 'enter' 'p' 'w' 's'
+Expected Outcome: the score increments by 4 when the fragment is hitted
+
+Test 45
+Category        : 11i
+Input Sequence  : 'unplug the teensy' 'plug the teensy back' 'SW2' OR 'r'
+Expected Outcome: the introduction page is skipped
+
+Test 46
+Category        : 11ii - 11v
+Input Sequence  : 'unplug the teensy' 'plug the teensy back'
+Expected Outcome: the student number, game title, animation are displayed, and the LCD back light turns on slowly
+
+Test 47
+Category        : 12i - 12vii
+Input Sequence  : 'r' 's'
+Expected Outcome: the starfighter and the shield are visible on screen, remaining life is 5, score is 0, no asteroids on the screen,
+no plasma bolts on screen, game time is 00:00, game is paused
+
+Test 48
+Category        : 13i
+Input Sequence  : 'r' 'p' 's' 's' 's' 's' 's' 's'
+Expected Outcome: the game time is incremented at at approximately 1 second
+
+Test 49
+Category        : 13ii
+Input Sequence  : 'r' 'p'
+Expected Outcome: the game time starts when the user unpause the game, and the game status information is sent to the computer with 
+"game started" message
+
+Test 50
+Category        : 14i
+Input Sequence  : 'r' 'p' 'p' OR 'SW2' 'joystick center' 'joystick center'
+Expected Outcome: the game is unpaused when the first 'p' or joystick center is pressed, then the game is paused when the second
+'p' or joystick center is pressed
+
+Test 50
+Category        : 14i
+Input Sequence  : 'r' 'p' 'p' OR 'SW2' 'joystick center' 'joystick center'
+Expected Outcome: the game is unpaused when the first 'p' or joystick center is pressed, then the game is paused when the second
+'p' or joystick center is pressed
+
+Test 51
+Category        : 14ii
+Input Sequence  : 'r' 'wait for 5 seconds' 'p' 's' OR 'SW2' 'wait for 5 seconds' 'joystick center' 'joystick down'
+Expected Outcome: the displayed time is 00:00
+
+Test 52
+Category        : 14iii
+Input Sequence  : 'r' 'p' 'wait for 5 seconds' 'p' 's' OR 'SW2' 'joystick center' 'wait for 5 seconds' 'joystick center' 'joystick down'
+Expected Outcome: the displayed time is 00:05
+
+Test 53
+Category        : 15i 15ii
+Input Sequence  : 'r' 'p' 'wait for the asteroids to fall down'
+Expected Outcome: if there are more asteroids on the left side, only Left LED flashes at 2HZ, 
+if there are more asteroids on the right side, only right LED flashes at 2HZ
+
+Test 54
+Category        : 16i
+Input Sequence  : 'r' 'p' 'wait until the game is over'
+Expected Outcome: the current status information and the "game over" message are sent to computer
+
+Test 55
+Category        : 16ii
+Input Sequence  : 'r' 'p' 'wait until the game is over'
+Expected Outcome: the back-light fades off slowly
+
+Test 56
+Category        : 16iii
+Input Sequence  : 'r' 'p' 'wait until the game is over'
+Expected Outcome: the words "game over" are displayed on screen and both LEDs turn on for 2 seconds
+
+Test 57
+Category        : 16iv
+Input Sequence  : 'r' 'p' 'wait until the game is over'
+Expected Outcome: the back-light fades back slowly, both LEDs are off, the options to quit or restart are given
+
+Test 58
+Category        : 17
+Input Sequence  : 'r' 'p' 'wait until the game is over' 'wait for 2 seconds' 'SW2' or 'r'
+Expected Outcome: the game is restarted and reseted
+
+Test 59
+Category        : 18
+Input Sequence  : 'r' 'p' 'wait until the game is over' 'wait for 2 seconds' 'SW3'
+Expected Outcome: the game is quited, teensy screen goes into inverse mode and displays student number only
+
+Test 60
+Category        : 19i
+Input Sequence  : 'r' 'p' 'change right potentiometer' 
+Expected Outcome: the game speed changes according to the value of the right potentiometer, this can be reflected by the speed of falling objects
+(plasma bolts and spacefight are not effected)
+
+Test 61
+Category        : 19ii
+Input Sequence  : 'r' 'right potentiometer to maximum' 'p' 'm' '700' 'enter' 's'
+Expected Outcome: the game speed slows down, the displayed speed value will be 6
+(plasma bolts and spacefight are not effected), the value '700' overrides the value of the right potentiometer for 1 second
+
+Test 62
+Category        : 21i
+Input Sequence  : 'r' 'p' 'l' '9999' 'enter' 's'
+Expected Outcome: the remaining life of the shield will be set to 9999
+
+Test 63
+Category        : 21ii
+Input Sequence  : 'r' 'p' 'g' '9999' 'enter' 's'
+Expected Outcome: the score set to 9999
+
+Test 64
+Category        : 21iii
+Input Sequence  : 'r' 'p' '?'
+Expected Outcome: the controls instruction will be sent to computer
+
+Test 65
+Category        : 21iv
+Input Sequence  : 'r' 'p' 'h' '20' 'enter'
+Expected Outcome: the x coordinate of the spacefiger will be changed to 20
+
+Test 66
+Category        : 21v
+Input Sequence  : 'r' 'p' 'w' 'shot until at least 1 asteroid is hitted' 'p' 'j' '2' 'enter' '2' 'enter'
+Expected Outcome: an asteroid is spawned at (2, 2)
+
+Test 67
+Category        : 21vi
+Input Sequence  : 'r' 'k' '20' 'enter' '20' 'enter'
+Expected Outcome: a boulder is spawned at (20, 20)
+
+Test 68
+Category        : 21vii
+Input Sequence  : 'r' 'i' '40' 'enter' '20' 'enter'
+Expected Outcome: a fragment is spawned at (40, 20)
